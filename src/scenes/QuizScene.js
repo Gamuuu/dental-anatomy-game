@@ -63,22 +63,22 @@ export class QuizScene extends Phaser.Scene {
     this.uiContainer.add(headerText);
 
     // Question Text
-    const qText = this.add.text(px, topY + (hasImage ? 100 : 120), this.question.question, {
+    const qText = this.add.text(px, topY + (hasImage ? 85 : 120), this.question.question, {
       fontSize: '20px', fontFamily: 'Arial', color: '#FFFFFF',
       wordWrap: { width: panelW - 60 }, align: 'center', lineSpacing: 8
-    }).setOrigin(0.5);
+    }).setOrigin(0.5, 0);
     this.uiContainer.add(qText);
 
     if (hasImage) {
       // Small thumbnail
-      const img = this.add.image(px, topY + 165, this.question.image);
+      const img = this.add.image(px, topY + 185, this.question.image).setOrigin(0.5, 0);
       img.setInteractive({ useHandCursor: true });
       // Scale to fit height ~100 or width ~160
       const scale = Math.min(100 / img.height, 160 / img.width, 1);
       img.setScale(scale);
       this.uiContainer.add(img);
 
-      const hintText = this.add.text(px + (img.width * scale / 2) + 15, topY + 165, '🔍 กดดูรูปเต็ม', {
+      const hintText = this.add.text(px + (img.width * scale / 2) + 15, topY + 185 + (img.height * scale / 2), '🔍 กดดูรูปเต็ม', {
         fontSize: '14px', fontFamily: 'Arial', color: '#FFD700',
       }).setOrigin(0, 0.5);
       this.uiContainer.add(hintText);
@@ -89,7 +89,7 @@ export class QuizScene extends Phaser.Scene {
     // Choices
     const choices = this.question.choices;
     const btnW = panelW - 80, btnH = 50;
-    const startY = topY + (hasImage ? 230 : 200);
+    const startY = topY + (hasImage ? 320 : 250);
     const labels = ['A', 'B', 'C', 'D'];
 
     this.choiceButtons = []; // store for fading later
