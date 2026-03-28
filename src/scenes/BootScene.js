@@ -21,6 +21,10 @@ export class BootScene extends Phaser.Scene {
 
     this.load.on('progress', (val) => { bar.width = barW * val; });
 
+    // Load question images
+    this.load.image('image_11', 'assets/image_11.png');
+    this.load.image('image_13', 'assets/image_13.png');
+
     this._generateTextures();
   }
 

@@ -194,9 +194,11 @@ export class GameScene extends Phaser.Scene {
   _buildLevel() {
     const grid = this.levelData.grid;
     const T = TILE_SIZE;
+    const numRows = grid.length;
+    const numCols = grid[0].length;
 
-    for (let row = 0; row < grid.length; row++) {
-      for (let col = 0; col < grid[row].length; col++) {
+    for (let col = 0; col < numCols; col++) {
+      for (let row = 0; row < numRows; row++) {
         const cell = grid[row][col];
         const x = col * T + T / 2;
         const y = row * T + T / 2;

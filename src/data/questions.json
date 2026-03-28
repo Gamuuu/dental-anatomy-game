@@ -2,147 +2,254 @@
   {
     "id": 1,
     "question": "What is nomenclature of tooth 36?",
-    "choices": ["Permanent Mandibular left first molar", "Permanent Mandibular right first molar", "Permanent Mandibular left second molar", "Primary Maxillary left first molar"],
+    "choices": [
+      "Permanent Mandibular left first molar",
+      "Permanent Mandibular right first molar",
+      "Permanent Mandibular left second molar",
+      "Primary Maxillary left first molar"
+    ],
     "correct": 0,
     "explanation": "Tooth 36 คือ Permanent Mandibular left first molar (ฟันกรามล่างซ้ายซี่แรก)"
   },
   {
     "id": 2,
     "question": "At what age does tooth 36 erupt?",
-    "choices": ["Around 1-2 years old", "Around 8-9 years old", "Around 6-7 years old", "Around 10-11 years old"],
+    "choices": [
+      "Around 1-2 years old",
+      "Around 8-9 years old",
+      "Around 6-7 years old",
+      "Around 10-11 years old"
+    ],
     "correct": 2,
     "explanation": "ฟันกรามล่างซี่แรก (tooth 36) ขึ้นประมาณอายุ 6-7 ปี"
   },
   {
     "id": 3,
     "question": "Which cusp is the smallest in tooth #36?",
-    "choices": ["Distal cusp", "Distobuccal cusp", "Mesiolingual cusp", "Distolingual cusp"],
+    "choices": [
+      "Distal cusp",
+      "Distobuccal cusp",
+      "Mesiolingual cusp",
+      "Distolingual cusp"
+    ],
     "correct": 0,
     "explanation": "Distal cusp เป็น cusp ที่เล็กที่สุดของ tooth #36"
   },
   {
     "id": 4,
     "question": "How many roots does tooth #36 have?",
-    "choices": ["1 root", "2 roots", "3 roots", "4 roots"],
+    "choices": [
+      "1 root",
+      "2 roots",
+      "3 roots",
+      "4 roots"
+    ],
     "correct": 1,
     "explanation": "Tooth #36 มี 2 ราก (mesial root และ distal root)"
   },
   {
     "id": 5,
     "question": "How many cusps are on the buccal side of tooth #36?",
-    "choices": ["1 cusp", "2 cusps", "3 cusps", "4 cusps"],
+    "choices": [
+      "1 cusp",
+      "2 cusps",
+      "3 cusps",
+      "4 cusps"
+    ],
     "correct": 2,
     "explanation": "ด้าน buccal ของ tooth #36 มี 3 cusps (MB, DB, Distal)"
   },
   {
     "id": 6,
     "question": "Root ของ permanent mandibular first molar เอียงไปด้านใด?",
-    "choices": ["Mesial", "Distal", "Buccal", "Lingual"],
+    "choices": [
+      "Mesial",
+      "Distal",
+      "Buccal",
+      "Lingual"
+    ],
     "correct": 1,
     "explanation": "รากฟันของ mandibular first molar เอียงไปทาง Distal"
   },
   {
     "id": 7,
     "question": "What age does the permanent mandibular third molar erupt?",
-    "choices": ["6-7 years old", "10-11 years old", "13-14 years old", "17-21 years old"],
+    "choices": [
+      "6-7 years old",
+      "10-11 years old",
+      "13-14 years old",
+      "17-21 years old"
+    ],
     "correct": 3,
     "explanation": "ฟันกรามล่างซี่ที่สาม (ฟันคุด) ขึ้นประมาณอายุ 17-21 ปี"
   },
   {
     "id": 8,
     "question": "What age does the permanent mandibular second molar erupt?",
-    "choices": ["6-7 years", "8-10 years", "11-13 years", "14-16 years"],
+    "choices": [
+      "6-7 years",
+      "8-10 years",
+      "11-13 years",
+      "14-16 years"
+    ],
     "correct": 2,
     "explanation": "ฟันกรามล่างซี่ที่สอง ขึ้นประมาณอายุ 11-13 ปี"
   },
   {
     "id": 9,
     "question": "FDI ของ Permanent Mandibular First Molar?",
-    "choices": ["36", "37", "46", "47"],
+    "choices": [
+      "36",
+      "37",
+      "46",
+      "47"
+    ],
     "correct": 0,
     "explanation": "ระบบ FDI: Permanent Mandibular left first molar = 36"
   },
   {
     "id": 10,
     "question": "Buccal surface of permanent mandibular first molar มีกี่ groove?",
-    "choices": ["No groove", "1 groove", "2 grooves", "3 grooves"],
+    "choices": [
+      "No groove",
+      "1 groove",
+      "2 grooves",
+      "3 grooves"
+    ],
     "correct": 2,
     "explanation": "ด้าน Buccal ของ mandibular first molar มี 2 grooves"
   },
   {
     "id": 11,
     "question": "Which surface is located on the lingual side of the distolingual inclined plane of the distal cusp?",
-    "choices": ["Distal marginal groove", "Lingual ridge", "Mesial ridge", "Mesiolingual triangular groove"],
+    "image": "image_11",
+    "choices": [
+      "Distal marginal groove",
+      "Lingual ridge",
+      "Mesial ridge",
+      "Mesiolingual triangular groove"
+    ],
     "correct": 0,
     "explanation": "Distal marginal groove อยู่ด้าน lingual ของ distolingual inclined plane ของ distal cusp"
   },
   {
     "id": 12,
     "question": "What is nomenclature of tooth #30?",
-    "choices": ["Permanent Mandibular right first molar", "Permanent Mandibular left first molar", "Permanent Mandibular right second molar", "Primary Maxillary left first molar"],
+    "choices": [
+      "Permanent Mandibular right first molar",
+      "Permanent Mandibular left first molar",
+      "Permanent Mandibular right second molar",
+      "Primary Maxillary left first molar"
+    ],
     "correct": 0,
     "explanation": "Tooth #30 (Universal system) = Permanent Mandibular right first molar"
   },
   {
     "id": 13,
     "question": "Which surface is located on the mesial side of the mesiobuccal inclined plane of the mesiolingual cusp?",
-    "choices": ["Mesiolingual triangular groove", "Mesial groove", "Distal ridge", "Mesial ridge"],
+    "image": "image_13",
+    "choices": [
+      "Mesiolingual triangular groove",
+      "Mesial groove",
+      "Distal ridge",
+      "Mesial ridge"
+    ],
     "correct": 0,
     "explanation": "Mesiolingual triangular groove อยู่ด้าน mesial ของ mesiobuccal inclined plane ของ mesiolingual cusp"
   },
   {
     "id": 14,
     "question": "Where is the buccal contact area located on the permanent mandibular second molar?",
-    "choices": ["Middle ⅓", "Cervical ⅓", "Occlusal ⅓", "Middle ⅓ - Cervical ⅓"],
+    "choices": [
+      "Middle ⅓",
+      "Cervical ⅓",
+      "Occlusal ⅓",
+      "Middle ⅓ - Cervical ⅓"
+    ],
     "correct": 1,
     "explanation": "Buccal contact area ของ mandibular second molar อยู่ที่ Cervical ⅓"
   },
   {
     "id": 15,
     "question": "Which of the following is NOT a primary function of molars?",
-    "choices": ["Chewing and grinding", "Maintain vertical dimension", "Esthetic", "Maintain arch continuity"],
+    "choices": [
+      "Chewing and grinding",
+      "Maintain vertical dimension",
+      "Esthetic",
+      "Maintain arch continuity"
+    ],
     "correct": 2,
     "explanation": "Esthetic ไม่ใช่หน้าที่หลักของฟันกราม (เป็นหน้าที่ของฟันหน้า)"
   },
   {
     "id": 16,
     "question": "Which tooth has the greatest variation on its occlusal surface?",
-    "choices": ["Second Premolar", "First Molar", "Second Molar", "Third Molar"],
+    "choices": [
+      "Second Premolar",
+      "First Molar",
+      "Second Molar",
+      "Third Molar"
+    ],
     "correct": 3,
     "explanation": "Third Molar มีรูปร่าง occlusal surface ที่หลากหลายมากที่สุด"
   },
   {
     "id": 17,
     "question": "How many cusps are present on the lingual surface of the permanent mandibular first molar?",
-    "choices": ["1 cusp", "2 cusps", "3 cusps", "4 cusps"],
+    "choices": [
+      "1 cusp",
+      "2 cusps",
+      "3 cusps",
+      "4 cusps"
+    ],
     "correct": 1,
     "explanation": "ด้าน lingual ของ mandibular first molar มี 2 cusps (ML และ DL)"
   },
   {
     "id": 18,
     "question": "Which groove separates the distal surface of the permanent mandibular second molar?",
-    "choices": ["Distal marginal groove", "Mesiobuccal groove", "Central groove", "Lingual groove"],
+    "choices": [
+      "Distal marginal groove",
+      "Mesiobuccal groove",
+      "Central groove",
+      "Lingual groove"
+    ],
     "correct": 0,
     "explanation": "Distal marginal groove แบ่งด้าน distal ของ mandibular second molar"
   },
   {
     "id": 19,
     "question": "Which groove separates the mesial surface of the permanent mandibular second molar?",
-    "choices": ["Distal marginal groove", "Mesial marginal groove", "Central groove", "Buccal groove"],
+    "choices": [
+      "Distal marginal groove",
+      "Mesial marginal groove",
+      "Central groove",
+      "Buccal groove"
+    ],
     "correct": 1,
     "explanation": "Mesial marginal groove แบ่งด้าน mesial ของ mandibular second molar"
   },
   {
     "id": 20,
     "question": "How many grooves meet at the central pit of the permanent mandibular first molar?",
-    "choices": ["1 groove", "2 grooves", "3 grooves", "4 grooves"],
+    "choices": [
+      "1 groove",
+      "2 grooves",
+      "3 grooves",
+      "4 grooves"
+    ],
     "correct": 2,
     "explanation": "มี 3 grooves มาบรรจบกันที่ central pit ของ mandibular first molar"
   },
   {
     "id": 21,
     "question": "Which of the following statements is NOT correct about the permanent mandibular first molar?",
-    "choices": ["It is the largest and strongest tooth in the mandibular arch", "It is the first tooth to erupt at approximately 6 years of age", "It is an anchor tooth and a cornerstone of occlusion", "It has trifurcation"],
+    "choices": [
+      "It is the largest and strongest tooth in the mandibular arch",
+      "It is the first tooth to erupt at approximately 6 years of age",
+      "It is an anchor tooth and a cornerstone of occlusion",
+      "It has trifurcation"
+    ],
     "correct": 3,
     "explanation": "Mandibular first molar มี bifurcation (2 ราก) ไม่ใช่ trifurcation (3 ราก)"
   }

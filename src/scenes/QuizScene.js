@@ -30,7 +30,9 @@ export class QuizScene extends Phaser.Scene {
     this.uiContainer.add(overlay);
 
     // Panel Size
-    const panelW = Math.min(740, GAME_WIDTH - 60), panelH = Math.min(480, GAME_HEIGHT - 40);
+    const hasImage = !!this.question.image;
+    const panelW = Math.min(740, GAME_WIDTH - 60);
+    const panelH = hasImage ? Math.min(580, GAME_HEIGHT - 20) : Math.min(480, GAME_HEIGHT - 40);
     const px = GAME_WIDTH / 2, py = GAME_HEIGHT / 2;
     const topY = py - panelH / 2;
     const leftX = px - panelW / 2;
@@ -61,16 +63,33 @@ export class QuizScene extends Phaser.Scene {
     this.uiContainer.add(headerText);
 
     // Question Text
-    const qText = this.add.text(px, topY + 120, this.question.question, {
+    const qText = this.add.text(px, topY + (hasImage ? 100 : 120), this.question.question, {
       fontSize: '20px', fontFamily: 'Arial', color: '#FFFFFF',
       wordWrap: { width: panelW - 60 }, align: 'center', lineSpacing: 8
     }).setOrigin(0.5);
     this.uiContainer.add(qText);
 
+    if (hasImage) {
+      // Small thumbnail
+      const img = this.add.image(px, topY + 165, this.question.image);
+      img.setInteractive({ useHandCursor: true });
+      // Scale to fit height ~100 or width ~160
+      const scale = Math.min(100 / img.height, 160 / img.width, 1);
+      img.setScale(scale);
+      this.uiContainer.add(img);
+
+      const hintText = this.add.text(px + (img.width * scale / 2) + 15, topY + 165, '🔍 กดดูรูปเต็ม', {
+        fontSize: '14px', fontFamily: 'Arial', color: '#FFD700',
+      }).setOrigin(0, 0.5);
+      this.uiContainer.add(hintText);
+
+      img.on('pointerdown', () => this._showFullImage(this.question.image));
+    }
+
     // Choices
     const choices = this.question.choices;
     const btnW = panelW - 80, btnH = 50;
-    const startY = topY + 200;
+    const startY = topY + (hasImage ? 230 : 200);
     const labels = ['A', 'B', 'C', 'D'];
 
     this.choiceButtons = []; // store for fading later
@@ -217,5 +236,40 @@ export class QuizScene extends Phaser.Scene {
         this.scene.stop();
       },
     });
+  }
+
+  _showFullImage(imageKey) {
+    if (this.fullImageContainer) return;
+
+    this.fullImageContainer = this.add.container(0, 0);
+    
+    const bg = this.add.rectangle(GAME_WIDTH / 2, GAME_HEIGHT / 2, GAME_WIDTH * 2, GAME_HEIGHT * 2, 0x000000, 0.9);
+    bg.setInteractive();
+    this.fullImageContainer.add(bg);
+
+    const fullImg = this.add.image(GAME_WIDTH / 2, GAME_HEIGHT / 2, imageKey);
+    // Keep within bounds
+    const maxScaleW = (GAME_WIDTH - 40) / fullImg.width;
+    const maxScaleH = (GAME_HEIGHT - 60) / fullImg.height;
+    const scale = Math.min(maxScaleW, maxScaleH, 2); // allow upscale up to 2x if needed
+    fullImg.setScale(scale);
+    this.fullImageContainer.add(fullImg);
+
+    const closeText = this.add.text(GAME_WIDTH / 2, GAME_HEIGHT - 30, '❌ กดที่ใดก็ได้เพื่อปิดรูป', {
+      fontSize: '18px', fontFamily: 'Arial', color: '#FFFFFF'
+    }).setOrigin(0.5);
+    this.fullImageContainer.add(closeText);
+
+    const closeHandler = () => {
+      this.fullImageContainer.destroy();
+      this.fullImageContainer = null;
+    };
+
+    bg.on('pointerdown', closeHandler);
+    fullImg.setInteractive();
+    fullImg.on('pointerdown', closeHandler);
+    
+    // Depth to ensure it's above everything else
+    this.fullImageContainer.setDepth(100);
   }
 }
