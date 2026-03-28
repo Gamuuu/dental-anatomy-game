@@ -92,9 +92,9 @@ export class MenuScene extends Phaser.Scene {
 
     // Character state
     this.outfitIndex = 0;
-    this.outfits = ['white', 'blue', 'pink'];
+    this.outfits = ['white', 'blue', 'pink', 'purple'];
     this.hatIndex = 0;
-    this.hats = ['none', 'cap'];
+    this.hats = ['none', 'cap', 'purple_cap', 'headband'];
 
     // Character preview
     this.dentist = this.add.sprite(rightX, cy - 60, this._getPlayerKey(), 0).setScale(2.5);
@@ -205,8 +205,8 @@ export class MenuScene extends Phaser.Scene {
 
   _updatePreview() {
     this.dentist.setTexture(this._getPlayerKey());
-    const outfitNames = ['ขาว', 'ฟ้า', 'ชมพู'];
-    const hatNames = ['ไม่มี', 'สวมหมวก'];
+    const outfitNames = ['ขาว', 'ฟ้า', 'ชมพู', 'ม่วง'];
+    const hatNames = ['ไม่มี', 'หมวกแก๊ป', 'หมวกสีม่วง', 'ผ้าคาดหัว'];
     this.outfitText.setText(`ชุด: ${outfitNames[this.outfitIndex]}`);
     this.hatText.setText(`หมวก: ${hatNames[this.hatIndex]}`);
   }

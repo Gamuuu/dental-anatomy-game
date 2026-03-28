@@ -22,7 +22,6 @@ export class BootScene extends Phaser.Scene {
     this.load.on('progress', (val) => { bar.width = barW * val; });
 
     this._generateTextures();
-    this.load.json('questions', '/src/data/questions.json');
   }
 
   create() {
@@ -34,12 +33,19 @@ export class BootScene extends Phaser.Scene {
 
     // Player variants (64×64 spritesheet, 4 frames)
     this._generateDetailedPlayer('player', '#FFFFFF', 'none');
-    this._generateDetailedPlayer('player_white_none', '#FFFFFF', 'none');
-    this._generateDetailedPlayer('player_blue_none', '#90CAF9', 'none');
-    this._generateDetailedPlayer('player_pink_none', '#F48FB1', 'none');
-    this._generateDetailedPlayer('player_white_cap', '#FFFFFF', 'cap');
-    this._generateDetailedPlayer('player_blue_cap', '#90CAF9', 'cap');
-    this._generateDetailedPlayer('player_pink_cap', '#F48FB1', 'cap');
+    const outfits = [
+      { name: 'white', color: '#FFFFFF' },
+      { name: 'blue', color: '#90CAF9' },
+      { name: 'pink', color: '#F48FB1' },
+      { name: 'purple', color: '#9C27B0' }
+    ];
+    const hats = ['none', 'cap', 'purple_cap', 'headband'];
+
+    outfits.forEach(outfit => {
+      hats.forEach(hat => {
+        this._generateDetailedPlayer(`player_${outfit.name}_${hat}`, outfit.color, hat);
+      });
+    });
 
     // Enemy (decayed tooth) 32×32 spritesheet: 3 frames
     const enemyCanvas = this.textures.createCanvas('enemy', T * 3, T);
@@ -264,6 +270,15 @@ export class BootScene extends Phaser.Scene {
         pCtx.fillStyle = '#1976D2';
         pCtx.fillRect(ox + 16, 0, 32, 6);
         pCtx.fillRect(ox + 32, 4, 18, 4);
+      } else if (hatType === 'purple_cap') {
+        pCtx.fillStyle = '#7B1FA2';
+        pCtx.fillRect(ox + 16, 0, 32, 6);
+        pCtx.fillRect(ox + 32, 4, 18, 4);
+      } else if (hatType === 'headband') {
+        pCtx.fillStyle = '#D32F2F';
+        pCtx.fillRect(ox + 18, 2, 28, 4);
+        pCtx.fillStyle = '#FFFFFF';
+        pCtx.fillRect(ox + 30, 2, 4, 4);
       }
 
       // Legs

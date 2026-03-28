@@ -6,6 +6,7 @@ import {
 } from '../config.js';
 import { createTouchControls } from '../ui/TouchControls.js';
 import { buildLongLevel } from '../utils/LevelBuilder.js';
+import questionsData from '../data/questions.json';
 
 export class GameScene extends Phaser.Scene {
   constructor() {
@@ -48,7 +49,7 @@ export class GameScene extends Phaser.Scene {
     this.quizBoxes = this.physics.add.group({ allowGravity: false, immovable: true });
 
     // Load questions
-    this.questions = this.cache.json.get('questions') || [];
+    this.questions = questionsData || [];
 
     // Build level from grid
     this.quizIndex = 0;
