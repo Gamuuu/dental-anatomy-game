@@ -1,0 +1,18 @@
+{
+  "name": "dental-anatomy-game",
+  "version": "1.0.0",
+  "description": "Dental Quest - 2D Platformer Quiz Game",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "phaser": "^3.90.0",
+    "vite": "^8.0.3"
+  }
+}
