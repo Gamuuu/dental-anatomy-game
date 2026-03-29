@@ -172,6 +172,10 @@ export class MenuScene extends Phaser.Scene {
     }).setOrigin(0.5).setInteractive({ useHandCursor: true });
     
     fsBtn.on('pointerdown', () => {
+      if (!this.scale.fullscreen.available) {
+        alert("ขออภัย เบราว์เซอร์หรืออุปกรณ์ของคุณ (เช่น iPhone) ไม่รองรับโหมดเต็มจอครับ");
+        return;
+      }
       if (this.scale.isFullscreen) {
         this.scale.stopFullscreen();
       } else {

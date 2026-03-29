@@ -80,10 +80,12 @@ export class QuizScene extends Phaser.Scene {
 
       const hintText = this.add.text(px + (img.width * scale / 2) + 15, topY + 185 + (img.height * scale / 2), '🔍 กดดูรูปเต็ม', {
         fontSize: '14px', fontFamily: 'Arial', color: '#FFD700',
-      }).setOrigin(0, 0.5);
+      }).setOrigin(0, 0.5).setInteractive({ useHandCursor: true });
       this.uiContainer.add(hintText);
 
-      img.on('pointerdown', () => this._showFullImage(this.question.image));
+      const showImageFn = () => this._showFullImage(this.question.image);
+      img.on('pointerdown', showImageFn);
+      hintText.on('pointerdown', showImageFn);
     }
 
     // Choices

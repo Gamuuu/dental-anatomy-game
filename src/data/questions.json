@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "question": "Which cusp is the smallest in tooth #36?",
+    "question": "Which cusp is the smallest in tooth 36?",
     "choices": [
       "Distal cusp",
       "Distobuccal cusp",
@@ -33,11 +33,11 @@
       "Distolingual cusp"
     ],
     "correct": 0,
-    "explanation": "Distal cusp เป็น cusp ที่เล็กที่สุดของ tooth #36"
+    "explanation": "Distal cusp เป็น cusp ที่เล็กที่สุดของ tooth 36"
   },
   {
     "id": 4,
-    "question": "How many roots does tooth #36 have?",
+    "question": "How many roots does tooth 36 have?",
     "choices": [
       "1 root",
       "2 roots",
@@ -45,11 +45,11 @@
       "4 roots"
     ],
     "correct": 1,
-    "explanation": "Tooth #36 มี 2 ราก (mesial root และ distal root)"
+    "explanation": "Tooth 36 มี 2 ราก (mesial root และ distal root)"
   },
   {
     "id": 5,
-    "question": "How many cusps are on the buccal side of tooth #36?",
+    "question": "How many cusps are on the buccal side of tooth 36?",
     "choices": [
       "1 cusp",
       "2 cusps",
@@ -61,7 +61,7 @@
   },
   {
     "id": 6,
-    "question": "Root ของ permanent mandibular first molar เอียงไปด้านใด?",
+    "question": "Which way does the root of tooth 36 tilt?",
     "choices": [
       "Mesial",
       "Distal",
@@ -97,7 +97,7 @@
   },
   {
     "id": 9,
-    "question": "FDI ของ Permanent Mandibular First Molar?",
+    "question": "FDI of permanent mandibular left first molar?",
     "choices": [
       "36",
       "37",
@@ -109,7 +109,7 @@
   },
   {
     "id": 10,
-    "question": "Buccal surface of permanent mandibular first molar มีกี่ groove?",
+    "question": "How many grooves does the buccal surface of the permanent mandibular first molar have?",
     "choices": [
       "No groove",
       "1 groove",
@@ -134,15 +134,15 @@
   },
   {
     "id": 12,
-    "question": "What is nomenclature of tooth #30?",
+    "question": "What is tooth 36 called in the Universal Numbering System?",
     "choices": [
-      "Permanent Mandibular right first molar",
-      "Permanent Mandibular left first molar",
-      "Permanent Mandibular right second molar",
-      "Primary Maxillary left first molar"
+      "#3",
+      "#14",
+      "#19",
+      "#30"
     ],
-    "correct": 0,
-    "explanation": "Tooth #30 (Universal system) = Permanent Mandibular right first molar"
+    "correct": 2,
+    "explanation": "Tooth 36 (FDI) คือ ฟันกรามล่างซ้ายซี่แรก ตรงกับเบอร์ #19 ในระบบ Universal"
   },
   {
     "id": 13,
@@ -159,7 +159,7 @@
   },
   {
     "id": 14,
-    "question": "Where is the buccal contact area located on the permanent mandibular second molar?",
+    "question": "Where is the contact area of buccal side located on the permanent mandibular second molar?",
     "choices": [
       "Middle ⅓",
       "Cervical ⅓",
