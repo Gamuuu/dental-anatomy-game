@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gamuuu <siwakorn.p.1010@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "phaser": "^3.90.0",
